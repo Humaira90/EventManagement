@@ -33,6 +33,12 @@ const Contact = () => {
 
   return (
     <div className="contact container">
+      <header className="contact-header">
+        <h2>GET IN TOUCH!</h2>
+        
+      </header>
+
+      {/* Moved banners section above the contact form */}
       <div className="banner">
         <div className="item">
           <h4>Address</h4>
@@ -47,47 +53,41 @@ const Contact = () => {
           <p>eliteevents@gmail.com</p>
         </div>
       </div>
+
+      {/* Contact form */}
       <div className="banner">
         <div className="item">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3689.8402672129037!2d91.8214439!3d22.3596594!3m2!1i1024!2i768!4f13.1!2m1!1smap!5e0!3m2!1sen!2sbd!4v1734618177841!5m2!1sen!2sbd"
-            style={{ border: 0, width: "100%", height: "450px" }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-        <div className="item">
-          <form onSubmit={handleSendMessage}>
-            <h2>CONTACT</h2>
-            <div>
-              <input
-                type="text"
-                placeholder="Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              <input
-                type="email"
-                placeholder="E-mail"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <input
-              type="text"
-              placeholder="Subject"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-            />
-            <textarea
-              rows={10}
-              placeholder="Message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-            <button type="submit">Send</button>
-          </form>
+        <form onSubmit={handleSendMessage}>
+  <h2>CONTACT US</h2>
+  <div>
+    <input
+      type="text"
+      placeholder="Name"
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+    />
+    <input
+      type="email"
+      placeholder="E-mail"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+    />
+  </div>
+  <input
+    type="text"
+    placeholder="Subject"
+    value={subject}
+    onChange={(e) => setSubject(e.target.value)}
+  />
+  <textarea
+    rows={10}
+    placeholder="Message"
+    value={message}
+    onChange={(e) => setMessage(e.target.value)}
+  />
+  <button type="submit">Send</button>
+</form>
+
         </div>
       </div>
     </div>

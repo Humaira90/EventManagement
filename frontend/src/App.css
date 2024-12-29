@@ -464,138 +464,154 @@ nav svg {
     font-size: 14px;
   }
 } 
+/* Contact Section */
 .contact {
+  padding-top: 75px;
+  padding-bottom: 75px;
+
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  
+  align-items: center;
+  gap: 50px;
+  text-align: center;
 }
-  
 
+/* Section Heading */
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Cormorant Garamond', serif; /* Updated font for header */
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.contact h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #a2783a;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Contact Banners */
 .contact .banner {
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .contact .banner .item {
   flex: 1;
+  background: linear-gradient(145deg, #ffffff, #e6e0d7);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
-  border: none;
-  padding: 15px 0;
-  border-radius: 10px;
-  background-color: rgba(255, 247, 234, 0.9);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact .banner .item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15), -6px -6px 15px rgba(255, 255, 255, 0.9);
 }
 
+/* Item Heading and Description */
 .contact .banner .item h4 {
-  font-weight: 800;
+  font-size: 1.8rem;
   font-family: "Alex Brush", cursive;
-  font-size: 2rem;
-  color: #363430;
+  color: #a2783a;
+  margin-bottom: 10px;
 }
 
 .contact .banner .item p {
-  color: #a88820;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 15px;
 }
 
+/* Contact Form */
 .contact .banner:last-child .item {
-  border: none;
+  flex: 1.5;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e6dccb;
+}
+
+.contact .banner:last-child .item h2 {
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  color: #333;
+  margin-bottom: 20px;
+  
 }
 
 .contact .banner:last-child .item form {
-  width: 100%;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.contact .banner:last-child .item form div {
-  display: flex;
-  gap: 20px;
-}
-
-.contact .banner:last-child .item form div input {
-  flex: 1;
-  padding: 10px;
-  font-size: 1rem;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.contact .banner:last-child .item form div input:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact .banner:last-child .item form div input:focus {
-  outline: none;
-  border-color: #a2783a;
-  box-shadow: 0px 4px 15px rgba(162, 120, 58, 0.5);
-}
-
-.contact .banner:last-child .item form h2 {
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: #363430;
+  width: 100%;
 }
 
 .contact .banner:last-child .item form input,
 .contact .banner:last-child .item form textarea {
-  padding: 8px;
-  background: transparent;
-  border: 1px solid #0c0c0c;
-  border-radius: 7px;
-  transition: all 0.3s ease;
- 
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fdfdfd;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.contact .banner:last-child .item form textarea:hover,
+.contact .banner:last-child .item form input:focus,
 .contact .banner:last-child .item form textarea:focus {
-  box-shadow: 0px 4px 15px rgba(162, 120, 58, 0.5);
   border-color: #a2783a;
+  box-shadow: 0px 4px 10px rgba(162, 120, 58, 0.3);
+}
+
+.contact .banner:last-child .item form textarea {
+  resize: none;
+  height: 120px;
 }
 
 .contact .banner:last-child .item form button {
-  padding: 10px 60px;
-  font-size: 24px;
+  padding: 12px 40px;
+  font-size: 1.2rem;
   color: #fff;
   background: #a2783a;
-  font-weight: 300;
-  font-family: "Alex Brush", cursive;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   border: none;
-  width: fit-content;
+  border-radius: 8px;
+  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .contact .banner:last-child .item form button:hover {
-  background-color: #8f662e;
+  background: #8f662e;
   transform: translateY(-3px);
 }
 
-.contact .banner:last-child .item form button:active {
-  transform: translateY(0);
-}
-
-@media (max-width: 830px) {
+/* Responsive Adjustments */
+@media (max-width: 960px) {
   .contact .banner {
     flex-direction: column;
+    gap: 30px;
   }
-}
 
-@media (max-width: 640px) {
-  .contact .banner:last-child .item form {
-    padding: 0;
-  }
-  .contact .banner:last-child .item form div {
-    flex-direction: column;
+  .contact .banner:last-child .item {
+    flex: 1;
   }
 }
 
