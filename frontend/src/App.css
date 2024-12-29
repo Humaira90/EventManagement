@@ -12,23 +12,23 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: url('C:\Users\User\Desktop\Projectwork\frontend\public\BGp.jpg') no-repeat center center fixed;
+  background: url('/BGp.jpg') no-repeat center center fixed;
   background-size: cover;
   animation: backgroundSlider 20s infinite;
 }
 
 @keyframes backgroundSlider {
   0% {
-    background-image: url('C:\Users\User\Desktop\Projectwork\frontend\public\BGp.jpg');
+    background-image: url('/BGp.jpg');
   }
   33% {
-    background-image: url('C:\Users\User\Desktop\Projectwork\frontend\public\Bgp2.jpg');
+    background-image: url('/Bgp2.jpg');
   }
   66% {
-    background-image: url('C:\Users\User\Desktop\Projectwork\frontend\public\BGp5.jpg');
+    background-image: url('/BGp5.jpg');
   }
   100% {
-    background-image: url('C:\Users\User\Desktop\Projectwork\frontend\public\BGp.jpg');
+    background-image: url('/BGp.jpg');
   }
 }
 
@@ -1347,6 +1347,129 @@ footer .banner .tag div button {
   color: #3d3939;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+/* Overall Portfolio Section */
+.portfolio {
+  padding: 2rem;
+  background-color: #f9f7f1;
+  font-family: 'Nunito Sans', sans-serif; /* Added new font family */
+}
+
+/* Portfolio Header */
+.portfolio h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Cormorant Garamond', serif; /* Updated font for header */
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.portfolio h2:hover {
+  color: #a2783a; /* Hover effect on the title */
+}
+
+/* Portfolio List Layout */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden; /* Prevents scrollbars in slider */
+}
+
+/* Portfolio Item Styling */
+.portfolio-item {
+  width: 30%;
+  margin: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Portfolio Item Hover Effect */
+.portfolio-item:hover {
+  transform: scale(1);
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Image Styling */
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.portfolio-item img:hover {
+  transform: scale(1.05); /* Zoom effect on image hover */
+}
+
+/* Portfolio Item Heading */
+.portfolio-item h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  font-family: 'Alex Brush', cursive; /* New font for titles */
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.portfolio-item h3:hover {
+  color: #a2783a; /* Hover effect on title text */
+}
+
+/* Slider Container */
+.portfolio-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding-bottom: 1rem; /* Optional: adds spacing below the slider */
+  margin: 0 auto;
+}
+
+.portfolio-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.portfolio-slider::-webkit-scrollbar-thumb {
+  background-color: #a2783a;
+  border-radius: 4px;
+}
+
+.portfolio-slider::-webkit-scrollbar-track {
+  background-color: #f9f7f1;
+}
+
+.portfolio-item {
+  flex: 0 0 auto;
+  width: 250px;
+}
+
+/* Optional: Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: 45%;
+  }
+
+  .portfolio-slider {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-item {
+    width: 90%;
+  }
 }
 
 

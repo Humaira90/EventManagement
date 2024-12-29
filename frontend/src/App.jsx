@@ -12,6 +12,7 @@ import ChatbotComponent from "./components/Chatbot";
 import AuthPopup from "./components/AuthPopup";
 import { UserProvider } from "./components/UserContext"; // Import the UserProvider
 import Packages from "./components/Packages";
+import Portfolio from "./components/Portfolio";
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -24,6 +25,7 @@ const App = () => {
         <Services />
         <Packages />
         <About />
+        <Portfolio /> 
         <Contact />
         <ChatbotComponent />
         <Reviews />
