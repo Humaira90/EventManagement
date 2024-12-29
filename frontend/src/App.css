@@ -15,6 +15,8 @@ body {
   background: url('/BGp.jpg') no-repeat center center fixed;
   background-size: cover;
   animation: backgroundSlider 20s infinite;
+ 
+
 }
 
 @keyframes backgroundSlider {
@@ -379,7 +381,7 @@ nav svg {
 .hero .item h3 {
   font-family: "Alex Brush", cursive;
   color: #a2783a;
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
@@ -390,7 +392,7 @@ nav svg {
 }
 
 .hero .item div h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #333;
@@ -398,7 +400,7 @@ nav svg {
 
 .hero .item div p {
   color: #666;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.6;
 }
 
@@ -615,6 +617,7 @@ nav svg {
   }
 }
 
+
 footer {
   padding: 40px 20px;
   background-color: #333; /* Dark background for elegance */
@@ -767,11 +770,11 @@ footer .content {
   }
 }
 
-
 .about {
   padding-top: 75px;
   padding-bottom: 75px;
   position: relative; /* Ensure the overlay is positioned correctly */
+ 
 }
 
 /* Add an overlay for better text readability */
@@ -787,22 +790,23 @@ footer .content {
 }
 
 .about h2 {
-  color: #1b160c;
-  font-weight: 800;
-  font-size: 32px;
-  margin-bottom: 20px;
-  letter-spacing: 4px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Added subtle text shadow for readability */
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Cormorant Garamond', serif; /* Updated font for header */
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 .about p {
   line-height: 36px;
   letter-spacing: 2px;
-  word-spacing: 6px;
+  word-spacing: 4px;
   color: #080808; /* Make the text color darker for better contrast */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for better readability */
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .services {
@@ -810,12 +814,13 @@ footer .content {
   padding-bottom: 75px;
 }
 .services h2 {
-  color:#1b160c;
-  font-weight: 800;
-  font-size: 32px;
-  margin-bottom: 20px;
-  letter-spacing: 4px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Cormorant Garamond', serif; /* Updated font for header */
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
 }
 .services .banner {
   display: grid;
@@ -859,6 +864,7 @@ footer .content {
 }
 /* Scoped Reviews Section */
 /* Overall Review Section */
+/* Review Section */
 .review-section {
   padding: 40px;
   border-radius: 10px;
@@ -1051,8 +1057,6 @@ footer .content {
   margin-top: 10px;
   line-height: 1.5;
 }
-
-
 
 /* Floating button style */
 .floating-btn {
@@ -1359,12 +1363,13 @@ footer .content {
 
 /* Section Title */
 .packages-section h2 {
-  color:#1b160c;
-  font-weight: 800;
-  font-size: 32px;
-  margin-bottom: 30px;
-  letter-spacing: 4px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Cormorant Garamond', serif; /* Updated font for header */
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 /* Grid Layout for Boxes */
@@ -1377,7 +1382,7 @@ footer .content {
 
 /* Individual Package Card */
 .package-card {
-  background-color: rgba(255, 247, 234, 0.9); /* Slightly transparent card background */
+  background-color: #f9f7f1; /* Slightly transparent card background */
   border: 1px solid #e6dccb;
   border-radius: 10px;
   width: 300px; /* Fixed width for uniformity */
