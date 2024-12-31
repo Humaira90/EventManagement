@@ -22,26 +22,11 @@ dotenv.config({ path: "./config/config.env" });
 // Enable CORS for the frontend URL
 app.use(
   cors({
-    origin: function (origin, callback) {
-      const allowedOrigins = [
-        process.env.FRONTEND_URL, // Deployed frontend URL
-        "http://localhost:5173", // Local frontend URL
-      ];
-
-      // Allow requests with no origin (e.g., mobile apps or Postman)
-      if (!origin) return callback(null, true);
-
-      if (allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
+    origin: [process.env.FRONTEND_URL,],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
-
 app.use('/images', cors(), express.static(path.join(__dirname, 'public/images')));
 // Middleware for JSON and URL-encoded data
 app.use(express.json());
