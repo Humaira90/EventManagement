@@ -6,13 +6,16 @@ const Reviews = () => {
   const [newReview, setNewReview] = useState({ name: "", email: "", message: "" });
   const [error, setError] = useState("");
 
+  // Use environment variable for backend URL
+  const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:4000";
+
   // Fetch reviews from the backend API
   useEffect(() => {
-    fetch("http://localhost:4000/api/v1/reviews")
+    fetch(`${backendUrl}/api/v1/reviews`)
       .then((response) => response.json())
       .then((data) => setReviews(data))
       .catch((error) => console.error("Error fetching reviews:", error));
-  }, []);
+  }, [backendUrl]);
 
   // Handle input changes
   const handleChange = (e) => {
@@ -33,7 +36,7 @@ const Reviews = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:4000/api/v1/reviews", {
+      const response = await fetch(`${backendUrl}/api/v1/reviews`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
