@@ -30,14 +30,14 @@ const Navbar = () => {
           <Link to="services" spy={true} smooth={true} duration={500}>
             SERVICES
           </Link>
-          <Link to="packages" spy={true} smooth={true} duration={500}>
+          <Link to="packages-section" spy={true} smooth={true} duration={500}>
             PACKAGES
           </Link>
           <Link to="about" spy={true} smooth={true} duration={500}>
             ABOUT
           </Link>
           <Link to="portfolio" spy={true} smooth={true} duration={500}>
-           OUR PORTFOLIOS
+           PORTFOLIOS
           </Link>
           <Link to="contact" spy={true} smooth={true} duration={500}>
             CONTACT
