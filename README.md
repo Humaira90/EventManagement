@@ -1,6 +1,8 @@
+
 # Elite Events
 
-Elite Events is a web application designed to manage event bookings and showcase event portfolios. It features a simple and user-friendly interface, where users can view event packages, book events, and view past events.
+Elite Events is a web application designed to manage event bookings and showcase event portfolios. It features a simple and user-friendly interface, where users can view event packages, book events, and view past events and leave their feedbacks.
+
 
 ## Features
 
@@ -9,8 +11,10 @@ Elite Events is a web application designed to manage event bookings and showcase
 - **Authentication:** Secure login and user registration using Firebase.
 - **Reviews:** Users can leave feedback for the events they attended.
 - **Chatbox:** A basic AI-powered chatbox to answer customer queries.
-  
-## Technologies Used
+
+
+
+## Tech Stack
 
 - **Frontend:**
   - React (with JSX)
@@ -22,39 +26,61 @@ Elite Events is a web application designed to manage event bookings and showcase
   - Node.js
   - Express.js (API routing)
   - MongoDB (for storing user data, bookings, and reviews)
- - GraphQL (for portfolios)
-### Installation
-To get started with the project locally:
+  - GraphQL (for portfolios)
 
-### 1. Clone the repository:
+
+## Run Locally
+
+Clone the project
 
 ```bash
-git clone https://github.com/Humaira90/EventManagement.git
+  git clone https://github.com/Humaira90/EventManagement.git
+```
 
-### 2. Install dependencies at the root level:
-Navigate to the root folder of the project and install the required dependencies:
+Go to the project directory
+
 ```bash
-cd EventManagement
-npm install
-### 3. Install dependencies for Frontend:
-Navigate to the frontend folder and install the frontend dependencies:
+  cd EventManagement
+```
+
+Install dependencies at the root directory
+
 ```bash
-cd ./frontend
-npm install
-### 4. Install dependencies for Backend:
-Navigate to the backend folder and install the backend dependencies:
+  npm install
+```
+Go to the project's frontend directory
+
 ```bash
-cd ./backend
-npm install
-### 5. Run the Development Servers:
-- **Frontend:** Run the frontend development server with:
+  cd ./frontend
+```
+Install dependencies at the frontend directory
+
 ```bash
-cd ./frontend
-npm run dev
-- **Backend:** Run the backend development server with:
+  npm install
+```
+Go to the project's backend directory
+
 ```bash
-cd ./backendend
-npm start
-###6. Access the Project:
+  cd ./backend
+```
+Install dependencies at the backend directory
+
+```bash
+  npm install
+```
+Run the frontend 
+
+```bash
+  cd ./frontend
+  npm run dev
+```
+Run the backend
+
+```bash
+  cd ./backend
+  npm start
+```
+
+## Access the project
 - **Frontend:** The frontend will be available at http://localhost:5173.
-- **Backend:** The backend API will be running on its respective port (e.g., http://localhost:4000).
+- **Backend:** The backend API will be running on its respective port ( http://localhost:4000).
