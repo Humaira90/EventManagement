@@ -28,31 +28,31 @@ To get started with the project locally:
 
 ### 1. Clone the repository:
 
-
+```bash
 git clone https://github.com/Humaira90/EventManagement.git
 
 ### 2. Install dependencies at the root level:
 Navigate to the root folder of the project and install the required dependencies:
-
+```bash
 cd EventManagement
 npm install
 ### 3. Install dependencies for Frontend:
 Navigate to the frontend folder and install the frontend dependencies:
-
+```bash
 cd ./frontend
 npm install
 ### 4. Install dependencies for Backend:
 Navigate to the backend folder and install the backend dependencies:
-
+```bash
 cd ./backend
 npm install
 ### 5. Run the Development Servers:
 - **Frontend:** Run the frontend development server with:
-
+```bash
 cd ./frontend
 npm run dev
 - **Backend:** Run the backend development server with:
-
+```bash
 cd ./backendend
 npm start
 ###6. Access the Project:
